@@ -1,0 +1,54 @@
+.navbar, .nav-link, .nav-item, .navbar-brand,.signup,.login {
+    color: #FCF8E8 !important;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navbar:hover, .nav-link:hover, .nav-item:hover, .navbar-brand:hover,
+.signup:hover, .login:hover {
+    color: #E8AA42 !important;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.auth-wrapper{
+    display: inline-flex;
+}
+
+.nav-link{
+    margin-right: 1.5rem;
+}
+
+.collapse {
+    margin: 0 5rem;
+}
+
+.navbar-nav {
+    margin-left: 5rem;
+}
+
+.auth-wrapper > :first-child {
+    margin-right: 1em;
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+.auth-wrapper > :last-child {
+    border: 1px solid silver;
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+
+
+
+
+
+/* Section for media queries */
+
+@media screen and (max-width: 991px) {
+    .auth-wrapper {
+        display: inline-block;
+    }
+}
