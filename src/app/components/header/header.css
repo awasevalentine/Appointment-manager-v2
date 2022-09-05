@@ -13,10 +13,6 @@
     text-decoration: none;
 }
 
-.auth-wrapper{
-    display: inline-flex;
-}
-
 .nav-link{
     margin-right: 1.5rem;
 }
@@ -29,6 +25,10 @@
     margin-left: 5rem;
 }
 
+/* Auth section */
+.auth-wrapper{
+    display: inline-flex;
+}
 .auth-wrapper > :first-child {
     margin-right: 1em;
     border: 1px solid silver;
@@ -40,6 +40,15 @@
     border-radius: 5px;
     padding: 2px 10px;
 }
+
+.signin:hover {
+    box-shadow: 1px 1px 1px 1px #D3CEDF;
+    transform: scale(1.1);
+    transition: transform 1.4s ease-in-out;
+}
+
+/* End of Auth section */
+
 
 
 
