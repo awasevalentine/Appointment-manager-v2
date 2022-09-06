@@ -1,3 +1,7 @@
+.navbar {
+    background-color: #00092C;
+}
+
 .navbar, .nav-link, .nav-item, .brand-name,.signup,.login {
     color: #FCF8E8 !important;
     font-family: 'Roboto', sans-serif;
