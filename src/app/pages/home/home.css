@@ -1,0 +1,86 @@
+#home-wrapper {
+    height: 100vh;
+    background: #000;
+    /* margin-top: 80px; */
+    color: aliceblue;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+                    url('../../../assets/home_page/first_page.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.intro > h1{
+    color: #E8AA42;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+.get-started{
+    width: 200px;
+    border: 1px solid #E8AA42;
+    border-radius: 5px;
+    background-color: #E8AA42;
+    color: #000;
+    padding: 5px 10px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.intro {
+    /* width: 250px; */
+    position: relative;
+    left: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+}
+
+.intro-text{
+    display: flex;
+    width: 250px;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    font-family: sans-serif;
+
+}
+
+.arrow-heartbeat{
+    font-weight: 600;
+    animation: arrow-hrtbeat 2s linear infinite;
+}
+
+.get-started:hover{
+    color: #fff;
+    transform: scale(4.3);
+    box-shadow: 2px 2px 2px 2px #D3CEDF;
+    transition: transform 3s linear;
+}
+
+
+
+@keyframes arrow-hrtbeat {
+    20% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+    
+}
+
+
+
+/* Media Query section */
+
+@media screen and (max-width: 991px) {
+    .intro {
+        /* width: 250px; */
+        position: relative;
+        left: 0;
+        right: 0;
+        transform: translate(50%, 50%);
+    }
+}
