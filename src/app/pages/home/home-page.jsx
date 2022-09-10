@@ -70,9 +70,22 @@ const HomePage =()=>{
                 <p>Don't miss any!</p>
             </div>
             <div className="benefits-main-wrapper">
-                {
-                    benefit
-                }
+                <span className="benefits-icons">
+                    <RiCalendarTodoFill className="fs-3" />
+                </span>
+                <hr className="benefits-hr"/>
+                <span className="benefits-icons">
+                    <MdMonitor className="fs-3" />
+                </span>
+                <hr className="benefits-hr"/>
+                <span className="benefits-icons">
+                    <MdCircleNotifications className="fs-3" />
+                </span>
+            </div>
+            <div className="content">
+                <span><p className="benefits-content">Create those appointments and task</p></span>
+                <span><p className="benefits-content">Create those appointments and task</p></span>
+                <span><p className="benefits-content">Create those appointments and task</p></span>
             </div>
             <div  className="calendar-image">
                 {/* <img src={require('../../../assets/home_page/section2.jpeg')} alt="Calendar"/> */}

@@ -108,10 +108,10 @@
 
 /* Benefits Section */
 
-.benefits-main-wrapper{
+.benefits-main-wrapper,.content{
     display: flex;
     justify-content: center;
-    margin-left: 8rem;
+    /* margin-left: 8rem; */
 }
 
 .benefits-hr{
@@ -134,17 +134,43 @@
     font-family: inherit;
     font-weight: 300;
 }
+
+.content > span:nth-child(-n+3){
+    padding-left: 4rem;
+}
 /* End of benefits sectgion */
 
 
 
-/* Media Query section */
+/* Media Query section for small screen */
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 411px) {
+    #intro-wrapper {
+        height: 60vh;
+        background: #000;
+        /* margin-top: 80px; */
+        color: aliceblue;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('../../../assets/home_page/first_page.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
     .mobile-view {
         width: 100%;
         display: flex;
         justify-content: center;
+    }
+
+    .intro-text{
+        display: flex;
+        width: 270px;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+        font-family: sans-serif;
+    
     }
 
     .intro-description{
@@ -152,8 +178,149 @@
         transform: translate(10px, 30%);
 
     }
+
+/* Calendar section */
+    .calendar-image{
+        width: 100%;
+        display: flex;
+        margin: auto;
+        box-shadow: 0 0 10px 10px #EEEEEE;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+        background-color: blanchedalmond;
+        background-image: url('../../../assets/home_page/section2.jpeg');
+        height: 50%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        border-radius: 5px;
+    
+        
+    }
+    /* End of Calendar section */
+/* Benefits Section */
+
+.benefits-main-wrapper, .content{
+    display: flex;
+    justify-content: center;
+}
+
+.benefits-hr{
+    width: 70px;
+    height: 1px;
+    margin-top: 25px;
+}
+
+.benefits-icons{
+    border: 1px solid #E8AA42;
+    border-radius: 100%;
+    padding: 6px;
+
+}
+
+.benefits-content{
+    width: 90px;
+    font-size: 13px;
+    margin-top: 15px;
+    font-family: inherit;
+    font-weight: 300;
+}
+
+.content > span:nth-child(-n+3){
+    padding-left: 1rem;
+}
+/* End of benefits sectgion */
 }
 
 
-@media screen and (max-width: 991px) {
+/* Media Query section for medium screen */
+
+@media screen and (min-width: 412px) and (max-width: 991px) {
+    #intro-wrapper {
+        height: 70vh;
+        background: #000;
+        /* margin-top: 80px; */
+        color: aliceblue;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+                        url('../../../assets/home_page/first_page.jpeg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+    .mobile-view {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .intro-text{
+        display: flex;
+        width: 270px;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+        font-family: sans-serif;
+    
+    }
+
+    .intro-description{
+        width: 80%;
+        transform: translate(10px, 30%);
+
+    }
+
+/* Calendar section */
+    .calendar-image{
+        width: 100%;
+        display: flex;
+        margin: auto;
+        box-shadow: 0 0 10px 10px #EEEEEE;
+        justify-content: center;
+        justify-items: center;
+        justify-self: center;
+        background-color: blanchedalmond;
+        background-image: url('../../../assets/home_page/section2.jpeg');
+        height: 80%;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: cover;
+        border-radius: 5px;
+    
+        
+    }
+    /* End of Calendar section */
+/* Benefits Section */
+
+.benefits-main-wrapper, .content{
+    display: flex;
+    justify-content: center;
+}
+
+.benefits-hr{
+    width: 70px;
+    height: 1px;
+    margin-top: 25px;
+}
+
+.benefits-icons{
+    border: 1px solid #E8AA42;
+    border-radius: 100%;
+    padding: 6px;
+
+}
+
+.benefits-content{
+    width: 90px;
+    font-size: 13px;
+    margin-top: 15px;
+    font-family: inherit;
+    font-weight: 300;
+}
+
+.content > span:nth-child(-n+3){
+    padding-left: 1rem;
+}
+/* End of benefits sectgion */
 }
