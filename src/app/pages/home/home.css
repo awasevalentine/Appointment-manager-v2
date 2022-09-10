@@ -81,7 +81,7 @@
 .calendar-section{
     height: 500px;
     background-color: #fff;
-    margin-bottom: 10em;
+    margin-bottom: 20em;
 }
 
 .calendar-image{
@@ -139,6 +139,30 @@
     padding-left: 4rem;
 }
 /* End of benefits sectgion */
+
+
+/* Offers Section */
+.offers-wrapper{
+    /* background-color: #F0D290; */
+    /* margin-top: 15rem; */
+    height: 80vh;
+    color: #000;
+}
+
+.offer-header-wrapper{
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.offer-header-wrapper > div {
+    width: 250px;
+    height: 1.5px;
+    background-color: #E8AA42;
+    text-align: center;
+}
+/* End of offers section */
 
 
 

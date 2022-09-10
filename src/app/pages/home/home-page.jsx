@@ -4,7 +4,7 @@ import { BsArrowRightShort } from 'react-icons/bs'
 import { MdOutlineCreate, MdCircleNotifications, MdMonitor } from 'react-icons/md'
 import { RiCalendarTodoFill } from 'react-icons/ri'
 import './home.css'
-import { benefits } from "../../../services/static-data";
+import { benefitOffers, benefits } from "../../../services/static-data";
 
 const HomePage =()=>{
 
@@ -89,6 +89,35 @@ const HomePage =()=>{
             </div>
             <div  className="calendar-image">
                 {/* <img src={require('../../../assets/home_page/section2.jpeg')} alt="Calendar"/> */}
+            </div>
+        </section>
+        <section className="offers-wrapper">
+            <div className="offer-header-wrapper">
+                <div></div>
+                <h3 class="text-center offer-header">
+                    <span className="text-warning fs-5">~⨀ </span>
+                        The Benefits
+                    <span className="text-warning fs-5"> ⨀~</span>
+                </h3>
+                <div></div>
+            </div>
+            <div class="offer-content">
+                <div className="row">
+                    {
+                        benefitOffers.map((res)=>(
+                            <div className="col-md-4 col-lg-3">
+                                <div className="card">
+                                    <h4 className="card-title">{res.name}</h4>
+                                    <p className="card-body">
+                                        {res.description}
+                                    </p>
+                                </div>
+                            </div>
+                        ))
+                 
+                    }
+
+                </div>
             </div>
         </section>
         </>
