@@ -1,4 +1,4 @@
-#home-wrapper {
+#intro-wrapper {
     height: 100vh;
     background: #000;
     /* margin-top: 80px; */
@@ -10,6 +10,7 @@
     background-position: center;
 }
 
+/* Intro section */
 .intro-description > h1{
     color: #E8AA42;
     font-family: 'Roboto', sans-serif;
@@ -63,9 +64,6 @@
     transition: transform 3s linear;
 }
 
-
-
-
 @keyframes arrow-hrtbeat {
     20% {
         opacity: 0;
@@ -76,6 +74,67 @@
     }
     
 }
+/* End of intro section */
+
+/* Calendar section */
+
+.calendar-section{
+    height: 500px;
+    background-color: #fff;
+    margin-bottom: 10em;
+}
+
+.calendar-image{
+    width: 70%;
+    display: flex;
+    margin: auto;
+    margin-top: 3em;
+    /* box-shadow: 10px 10px 10px 10px #D3CEDF; */
+    box-shadow: 0 0 10px 10px #EEEEEE;
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    background-color: blanchedalmond;
+    background-image: url('../../../assets/home_page/section2.jpeg');
+    height: 80%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 5px;
+
+    
+}
+/* End of calendar section */
+
+/* Benefits Section */
+
+.benefits-main-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-left: 8rem;
+}
+
+.benefits-hr{
+    width: 150px;
+    height: 1px;
+    margin-top: 25px;
+}
+
+.benefits-icons{
+    border: 1px solid #E8AA42;
+    border-radius: 100%;
+    padding: 10px;
+
+}
+
+.benefits-content{
+    width: 150px;
+    font-size: 13px;
+    margin-top: 15px;
+    font-family: inherit;
+    font-weight: 300;
+}
+/* End of benefits sectgion */
 
 
 
