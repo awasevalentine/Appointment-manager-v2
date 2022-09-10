@@ -102,12 +102,13 @@ const HomePage =()=>{
                 <div></div>
             </div>
             <div class="offer-content">
-                <div className="row">
+                <div className="row ">
                     {
                         benefitOffers.map((res)=>(
                             <div className="col-md-4 col-lg-3">
-                                <div className="card">
-                                    <h4 className="card-title">{res.name}</h4>
+                                <div className="card" style={{height: '350px'}}>
+                                    <img src={res.image} class="card-img-top" alt="Appointment" />
+                                    <h4 className="card-title mt-3">{res.name}</h4>
                                     <p className="card-body">
                                         {res.description}
                                     </p>
