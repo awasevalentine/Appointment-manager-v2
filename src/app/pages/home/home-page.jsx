@@ -5,46 +5,9 @@ import { MdOutlineCreate, MdCircleNotifications, MdMonitor } from 'react-icons/m
 import { RiCalendarTodoFill } from 'react-icons/ri'
 import './home.css'
 import { benefitOffers, benefits } from "../../../services/static-data";
+import Footer from "../../components/footer/footer";
 
 const HomePage =()=>{
-
-    const benefit = benefits.map((res)=>{
-
-        if(res.name == 'New Appointment'){
-             return <div>
-                    <div className="d-flex">
-                        <span className="benefits-icons">
-                            <RiCalendarTodoFill className="fs-3" />
-                        </span>
-                        <hr className="benefits-hr"/>
-                    </div>
-                    <p className="benefits-content">Create those appointments and task</p>
-                    </div>
-        }
-        if(res.name == 'Track Status'){
-            return <div>
-                    <div className="d-flex">
-                        <span className="benefits-icons">
-                            <MdMonitor className="fs-3" />
-                        </span>
-                        <hr className="benefits-hr"/>
-                    </div>
-                    <p className="benefits-content">Create those appointments and task</p>
-                    </div>
-        }
-        if(res.name == 'Get Notified'){
-            return <div>
-                    <div className="d-flex">
-                        <span className="benefits-icons">
-                            <MdCircleNotifications className="fs-3" />
-                        </span>
-                    </div>
-                    <p className="benefits-content">Create those appointments and task</p>
-                    </div>
-        }
-    }
-
-    )
 
 
     return (
@@ -83,9 +46,9 @@ const HomePage =()=>{
                 </span>
             </div>
             <div className="content">
-                <span><p className="benefits-content">Create those appointments and task</p></span>
-                <span><p className="benefits-content">Create those appointments and task</p></span>
-                <span><p className="benefits-content">Create those appointments and task</p></span>
+                <span><p className="benefits-content">Create appointments or tasks</p></span>
+                <span><p className="benefits-content">Track status of task or Appointment</p></span>
+                <span><p className="benefits-content">Get notified</p></span>
             </div>
             <div  className="calendar-image">
                 {/* <img src={require('../../../assets/home_page/section2.jpeg')} alt="Calendar"/> */}
@@ -102,11 +65,11 @@ const HomePage =()=>{
                 <div></div>
             </div>
             <div class="offer-content">
-                <div className="row ">
+                <div className="row">
                     {
                         benefitOffers.map((res)=>(
-                            <div className="col-md-4 col-lg-3">
-                                <div className="card" style={{height: '350px'}}>
+                            <div className="col-sm-12 col-md-4 col-lg-3">
+                                <div className="card" style={{height: '100% !important'}}>
                                     <img src={res.image} class="card-img-top" alt="Appointment" />
                                     <h4 className="card-title mt-3">{res.name}</h4>
                                     <p className="card-body">
@@ -121,6 +84,7 @@ const HomePage =()=>{
                 </div>
             </div>
         </section>
+        <Footer />
         </>
     )
 }
