@@ -2,8 +2,36 @@
 .footer-main-wrapper{
     height: 100px;
     background-color: #000;
+    color: #a9a3a3 !important;
+
 }
 
-.footer-main-wrapper > p {
-    padding-top: 70px
+.footer-content {
+    display: inline-flex;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.footer-content > span, .footer-content > p {
+    width: 50%;
+    height: 100%;
+}
+
+.footer-content > p {
+    /* padding-top: 70px; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.vertical_rule{
+    height: 40px;
+    width: 3px;
+    background-color: #a9a3a3;
+    margin-left: 15px;
+    margin-top: -10px;
+}
+.footer-content > span {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 10px;
 }

@@ -5,7 +5,11 @@ const Footer = () => {
     return ( 
         <>
         <div className='footer-main-wrapper'>
-            <p class="text-white text-center">&copy; 2022 Appointment Manager </p>
+            <div class="footer-content">
+                <p>&copy; 2022 Appointment Manager </p>
+                <div className='vertical_rule'></div>
+                <span>All Right Reserved 🥨</span>
+            </div>
         </div>
         </>
      );
