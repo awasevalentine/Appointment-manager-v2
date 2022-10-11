@@ -14,16 +14,18 @@ const HomePage =()=>{
         <>
         <NavSection />
         <div id="intro-wrapper">
-            <section className="intro mobile-view">
+            <section className="intro">
                 <div className="intro-description">
-                    <h1 class="display-6">Appointment Manager</h1>
-                    <p className="text-centert intro-text">
-                        Get those appointments or tasks sorted out and well managed.
-                        Set reminder, track their progress, and get notified.
-                    </p>
-                    <Link class="get-started" to='/'>Get Started 
-                        <BsArrowRightShort class="fs-4 arrow-heartbeat" />
-                    </Link>
+                    <div class="intro-description-content">
+                        <h1 class="display-6">Appointment Manager</h1>
+                        <p className="text-centert intro-text">
+                            Get those appointments or tasks sorted out and well managed.
+                            Set reminder, track their progress, and get notified.
+                        </p>
+                        <Link class="get-started" to='/'>Get Started 
+                            <BsArrowRightShort class="fs-4 arrow-heartbeat" />
+                        </Link>
+                    </div>
                 </div>
             </section>
         </div>
@@ -69,7 +71,7 @@ const HomePage =()=>{
                     {
                         benefitOffers.map((res)=>(
                             <div className="col-sm-12 col-md-4 col-lg-3">
-                                <div className="card" style={{height: '100% !important'}}>
+                                <div className="card h-100" style={{height: '100% !important'}}>
                                     <img src={res.image} class="card-img-top" alt="Appointment" />
                                     <h4 className="card-title mt-3">{res.name}</h4>
                                     <p className="card-body">
